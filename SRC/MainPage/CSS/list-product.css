@@ -1,0 +1,17 @@
+.navbar{
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+}
+.navbar img{
+    height: 80px;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 15px;
+}
