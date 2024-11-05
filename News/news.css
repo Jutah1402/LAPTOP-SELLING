@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+    height: 70px;
+}
+
+.navbar img {
+    height: 70px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #ffc940;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+

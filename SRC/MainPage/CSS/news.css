@@ -4,23 +4,29 @@
     padding: 0;
 }
 
-.navbar{
+.navbar {
     padding: 0px;
     margin: 0px;
-    height: 80px;
-}
-.navbar img{
-    height: 80px;
+    height: 70px;
 }
 
-.navbar a{
+.navbar img {
+    height: 70px;
+}
+
+.navbar a {
     color: #fff;
 }
 
-.navbar ul{
+.navbar a:hover {
+    color: #ffc940;
+}
+
+.navbar ul {
     display: flex;
     gap: 15px;
 }
+
 
 header {
     background: #333;

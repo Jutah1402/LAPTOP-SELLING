@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <!-- Link Bootstrap 5.3 offline -->
+     <link rel="stylesheet" href="../SRC/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./news.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #111D8A;">
+            <img src="../Assets/Blue Waves Surfing Club Logo (1024 x 500 px).png" alt="">
+            <a class="navbar-brand" href=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MainPage/list-product.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../SRC/MainPage/news.html"> Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MainPage/about.html"> Về chúng tôi</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-4" type="search" placeholder="Tìm kiếm" aria-label="">
+                </form>
+                <div class="d-flex gap-2">
+                    <a class="nav-link" href="../MainPage/register.html">Đăng kí</a>
+                    <a class="nav-link">|</a>
+                    <a class="nav-link"> Đăng nhập</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero bg-success-subtle text-success-emphasis py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-4">Tin Nóng Trong Ngày</h1>
+                    <p class="lead">Cập nhật liên tục những tin tức nổi bật nhất về mọi lĩnh vực trên toàn thế giới.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Bài viết nổi bật -->
+            <div class="col-md-8">
+                <h2 class="mb-4">Bài Viết Nổi Bật</h2>
+                <div class="card mb-4">
+                    <img src="../SRC/Assets/52cc30f7d18da18f8be0a2dc705d4907.jpg" class="card-img-top" style="height: 380px;" alt="Bài viết nổi bật">
+                    <div class="card-body">
+                        <h5 class="card-title">Sự kiện kinh tế nổi bật trong tuần</h5>
+                        <p class="card-text">Bài viết tổng hợp các sự kiện kinh tế, tài chính quốc tế quan trọng nhất trong tuần qua. Những biến động về giá dầu, thị trường chứng khoán, và các chính sách mới của các quốc gia...</p>
+                        <a href="#" class="btn btn-outline-primary">Đọc tiếp</a>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img src="../SRC/Assets/tintuc1.jpg" class="card-img-top" style="height: 380px;" alt="Bài viết nổi bật">
+                    <div class="card-body">
+                        <h5 class="card-title">Công nghệ đột phá trong năm 2024</h5>
+                        <p class="card-text">Năm 2024 sẽ chứng kiến nhiều công nghệ mới mang tính đột phá như trí tuệ nhân tạo, blockchain, và các giải pháp năng lượng sạch...</p>
+                        <a href="#" class="btn btn-outline-primary">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar: Tin tức mới nhất -->
+            <div class="col-md-4">
+                <h2 class="mb-4">Tin Tức Mới Nhất</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#">Việt Nam đạt cột mốc xuất khẩu nông sản vượt kỷ lục</a>
+                        <span class="small text-muted d-block">Ngày 03/11/2024</span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Thị trường chứng khoán Châu Á giảm mạnh</a>
+                        <span class="small text-muted d-block">Ngày 03/11/2024</span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Xu hướng mua sắm cuối năm 2024: Những thay đổi đáng chú ý</a>
+                        <span class="small text-muted d-block">Ngày 03/11/2024</span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Công nghệ xe tự lái đạt bước đột phá mới</a>
+                        <span class="small text-muted d-block">Ngày 02/11/2024</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

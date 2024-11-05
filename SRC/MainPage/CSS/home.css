@@ -1,64 +1,68 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-  
+
 }
 
-.navbar{
+/* Bắt đầu CSS header */
+.navbar {
     padding: 0px;
     margin: 0px;
     height: 70px;
 }
-.navbar img{
+
+.navbar img {
     height: 70px;
 }
 
-.navbar a{
+.navbar a {
     color: #fff;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #ffc940;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     gap: 15px;
 }
 
-#carouselExample img{
+/* Kết thúc CSS header */
+.scroll-field {
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+}
+
+
+#carouselExample img {
     height: 500px;
     object-fit: cover;
 }
 
 
-.btn img{
+.btn img {
     height: 100px;
     width: 100px;
     border-radius: 100px;
 }
 
-.btn button{
+.btn button {
     height: 100px;
     width: 100px;
-    border-radius:100px ;
-   
+    border-radius: 100px;
+
 }
 
-.choose{
+.choose {
     display: flex;
     gap: 80px;
     justify-content: center;
 }
 
-.choose a{
+.choose a {
     text-decoration: none;
     list-style: none;
     color: rgba(60, 60, 61, 0.877);
-}
-
-.scroll-field{
-    overflow-y: auto;
-    height: calc(100vh - 70px);
 }
