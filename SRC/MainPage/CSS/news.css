@@ -16,6 +16,9 @@
 .navbar a{
     color: #fff;
 }
+.navbar a:hover{
+    color: #ffc940;
+}
 
 .navbar ul{
     display: flex;
