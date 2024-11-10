@@ -17,6 +17,9 @@
 .navbar a {
     color: #fff;
 }
+.navbar a:hover{
+    color: #ffc940;
+}
 
 .navbar a:hover {
     color: #ffc940;
