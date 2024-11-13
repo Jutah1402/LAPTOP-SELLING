@@ -23,6 +23,9 @@
     display: flex;
     gap: 15px;
 }
+.navbar a:hover{
+    color: #ffc940;
+}
 
 .scroll-field {
     overflow-y: auto;
