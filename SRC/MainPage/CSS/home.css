@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Bắt đầu CSS header */
@@ -84,4 +84,28 @@
 .dnhap:hover{
     background: none;
     color: #ffc940;
+}
+
+.row{
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    z-index: 2;
+    width: 6px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #808080;
 }
