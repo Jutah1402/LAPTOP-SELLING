@@ -76,8 +76,8 @@ section {
 /* Nút Mua ngay */
 .btn-buy {
     display: inline-block;
-    background-color: #28a745;
-    color: white;
+    background-color: #ffbf00;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     margin-top: 15px;
     border: none;
@@ -94,7 +94,7 @@ section {
 }
 
 .btn-buy:hover {
-    background-color: #218838;
+    background-color: #c48301;
 }
 
 /* Điều chỉnh cho màn hình nhỏ */
@@ -110,37 +110,6 @@ section {
     }
 }
 
-/* Thanh sidebar */
-.sidebar {
-    margin-top: 25px;
-    width: 250px;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 15px;
-}
-
-.sidebar ul li a {
-    color: rgb(97, 209, 243);
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-}
-
-.sidebar ul li a:hover {
-    background-color: #3782ce;
-}
-
 /* Nội dung chính */
 .main-content {
     margin-left: 270px;
@@ -154,20 +123,38 @@ section {
 }
 
 h3 {
-    color: #111d89;
-}
-
-.sidebar aside {
-    padding: 9px;
-    position: fixed;
-
-}
-
-.sidebar aside img {
-    width: 50px;
-    height: 50px;
+    color: #27318b;
 }
 
 .title-page{
-    color: #111d89;
+    color: #4e4e4e;
+}
+
+/* CSS cho menu san pham */
+.sidebar-cus {
+    height: calc(100vh - 70px);
+    background-color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top: 70px;
+}
+.sidebar-cus h4, .sidebar-cus h5 {
+    color: #000000;
+}
+.sidebar-cus a {
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar-cus a:hover {
+    background-color: #7d94c1;
+    border-radius: 5px;
+    color: #000000;
+}
+span{
+    color: rgb(0, 0, 0);
+}
+
+.sidebar{
+    padding: 25px;
+    width: 250px;
 }
