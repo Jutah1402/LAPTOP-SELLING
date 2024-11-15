@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+.navbar{
+    padding: 0px;
+    margin: 0px;
+    height: 70px;
+}
+.navbar img{
+    height: 70px;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: #ffc940;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 15px;
+}
+
+#carouselExample img{
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.btn img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.btn button{
+    height: 100px;
+    width: 100px;
+    border-radius:100px ;
+   
+}
+
+.choose{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.choose a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(60, 60, 61, 0.877);
+}
+
+.scroll-field{
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+}
+  /* Section */
+  section {
+    background-color: #111d89;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
