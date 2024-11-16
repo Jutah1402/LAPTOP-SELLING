@@ -85,7 +85,11 @@ header nav ul li a {
     background: #fff;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.post a{
+    list-style: none;
+    text-decoration: none;
 }
 
 .post img {
@@ -104,4 +108,8 @@ h3{
 
 .title-page{
     color: #343438;
+}
+
+.post a:hover{
+    color: rgb(200, 130, 25);
 }
