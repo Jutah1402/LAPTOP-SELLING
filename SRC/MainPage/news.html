@@ -41,60 +41,90 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-4" type="search" placeholder="Tìm kiếm" aria-label="">
                 </form>
+
                 <div class="d-flex gap-2">
                     <a class="nav-link" href="/SRC/MainPage/register.html">Đăng kí</a>
                     <a class="nav-link">|</a>
-                    <a class="nav-link"> Đăng nhập</a>
+                    <button type="button" class="btn btn-primary dnhap" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Đăng nhập
                 </div>
+
+
 
             </div>
         </div>
-    </nav>
+        <!-- form Dang nhap -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng nhập</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="mb-3 p-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 mx-3 bt-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="modal-footer p-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                        </div>
 
-    <section class="hero">
-        <div class="container mt-3">
-            <div class="w-100 text-center p-2 fs-2 fw-semibold title-page">CẬP NHẬT TIN TỨC MỚI</div>
-            <p>Theo dõi những bài đánh giá chuyên sâu và tin tức mới nhất trong lĩnh vực công nghệ.</p>
+                    </form>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section class="blog-posts container">
-        <article class="post">
-            <img src="../Assets/Top-7-laptop-AI-ASUS-2-1344x840.jpg" alt="Hình ảnh laptop 1">
-            <a href="/News/news1.html">
-                <h3>Top 8 laptop AI ASUS đáng mua nhất năm 2024</h3>
-            </a>
-            <p>Hãng MacBook vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá</p>
-        </article>
-        <article class="post">
-            <img src="../Assets/macbook-doi-moi-nhat-cover-.jpg" alt="Hình ảnh laptop 3">
-            <a href="/News/news1.html">
-                <h3>So sánh hai mẫu laptop gaming đình đám</h3>
-            </a>
-            <p>Bài so sánh chi tiết giữa hai mẫu laptop gaming hot nhất hiện nay, giúp bạn đưa ra...</p>
-        </article>
-        <article class="post">
-            <img src="../Assets/avatar-cach-khac-phuc-tinh-trang-ipad-khong-kha-dung.jpg" alt="Hình ảnh laptop 1">
-            <a href="/News/news1.html">
-                <h3>Cách khắc phục tình trạng iPad không khả dụng</h3>
-            </a>
-            <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
-        </article>
-        <article class="post">
-            <img src="../Assets/Loi-ich-cua-laptop-AI-trong-thiet-ke-do-hoa-1-1344x840.jpg" alt="Hình ảnh laptop 1">
-            <a href="/News/news1.html">
-                <h3>Lợi ích của laptop AI trong thiết kế đồ họa bạn cần biết</h3>
-            </a>
-            <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
-        </article>
-    </section>
+    </nav>
+    
+    <div class="scroll-field">
+        <div class="w-100 text-center p-4 pb-1 fs-2 fw-semibold title-page">VỀ CHÚNG TÔI</div>
+        <p class="text-center pb-3">Theo dõi những bài đánh giá chuyên sâu và tin tức mới nhất trong lĩnh vực công nghệ.</p>
+       
+        <section class="blog-posts container">
+            <article class="post">
+                <img src="../Assets/Top-7-laptop-AI-ASUS-2-1344x840.jpg" alt="Hình ảnh laptop 1">
+                <a href="/News/news1.html">
+                    <h3>Top 8 laptop AI ASUS đáng mua nhất năm 2024</h3>
+                </a>
+                <p>Hãng MacBook vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá</p>
+            </article>
+            <article class="post">
+                <img src="../Assets/macbook-doi-moi-nhat-cover-.jpg" alt="Hình ảnh laptop 3">
+                <a href="/News/news1.html">
+                    <h3>So sánh hai mẫu laptop gaming đình đám</h3>
+                </a>
+                <p>Bài so sánh chi tiết giữa hai mẫu laptop gaming hot nhất hiện nay, giúp bạn đưa ra...</p>
+            </article>
+            <article class="post">
+                <img src="../Assets/avatar-cach-khac-phuc-tinh-trang-ipad-khong-kha-dung.jpg" alt="Hình ảnh laptop 1">
+                <a href="/News/news1.html">
+                    <h3>Cách khắc phục tình trạng iPad không khả dụng</h3>
+                </a>
+                <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
+            </article>
+            <article class="post">
+                <img src="../Assets/Loi-ich-cua-laptop-AI-trong-thiet-ke-do-hoa-1-1344x840.jpg" alt="Hình ảnh laptop 1">
+                <a href="/News/news1.html">
+                    <h3>Lợi ích của laptop AI trong thiết kế đồ họa bạn cần biết</h3>
+                </a>
+                <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
+            </article>
+        </section>
 
-   
+
         <div class="container my-4">
             <div class="row">
                 <!-- Bài viết 1 -->
                 <div class="col-md-6 d-flex mb-4">
-                    <img src="../Assets/cach-chon-vo-case-may-tinh.png" alt="Image 1" class="img-fluid me-3" style="max-width: 330px;">
+                    <img src="../Assets/cach-chon-vo-case-may-tinh.png" alt="Image 1" class="img-fluid me-3"
+                        style="max-width: 330px;">
                     <div>
                         <h5 class="mb-1">Tại sao PC RTX 4060 và I5 12400F lại là sự kết hợp PC...</h5>
                         <small class="text-muted">Bảo Châu - 2 giờ trước</small>
@@ -103,7 +133,8 @@
                 </div>
                 <!-- Bài viết 2 -->
                 <div class="col-md-6 d-flex mb-4">
-                    <img src="/SRC/Assets/Main_OG_Image_02.png" alt="Image 2" class="img-fluid me-3" style="max-width: 350px;">
+                    <img src="/SRC/Assets/Main_OG_Image_02.png" alt="Image 2" class="img-fluid me-3"
+                        style="max-width: 350px;">
                     <div>
                         <h5 class="mb-1">LG Display vừa rót thêm 1 tỷ USD để mở rộng sản xuất tại...</h5>
                         <small class="text-muted">Thanh Thanh - 2 giây trước</small>
@@ -111,13 +142,8 @@
                     </div>
                 </div>
             </div>
-    
-           
         </div>
-    
-        <!-- Bootstrap 5.3 JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-   
+    </div>
 </body>
 
 </html>

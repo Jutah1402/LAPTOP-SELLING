@@ -6,72 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT US</title>
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="./CSS/home.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007bff; /* Màu xanh chủ đạo */
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-        }
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .about-content {
-            max-width: 800px;
-            margin-top: 40px;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-        }
-        .about-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .founder {
 
-            text-align: center;
-        }
-        .founder img {
-            width: 200px; /* Giữ tỉ lệ tròn */
-            height: 200px; /* Giữ tỉ lệ tròn */
-            object-fit: cover; /* Đảm bảo ảnh không bị méo */
-            border-radius: 50%; /* Tạo hình tròn */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .founder h3 {
-            margin-top: 15px;
-            font-size: 22px;
-            color: #111d89;
-        }
-        .founder p {
-            font-size: 16px;
-            color: #333;
-            margin-top: 10px;
-        }
-     
-    </style>
 </head>
-
+<script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 <body>
-<div class="row"> 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" style="background-color: #111D8A;">
             <img src="../Assets/Blue Waves Surfing Club Logo (1024 x 500 px).png" alt="">
@@ -84,17 +24,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/SRC/MainPage/home.html">Trang chủ</a>
+                        <a class="nav-link" href="./home.html">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/SRC/MainPage/list-product.html">Sản phẩm</a>
+                        <a class="nav-link" href="../MainPage/list-product.html">Sản phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/SRC/MainPage/news.html"> Tin tức</a>
+                        <a class="nav-link" href="../MainPage/news.html"> Tin tức</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/SRC/MainPage/about.html"> Về chúng tôi</a>
+                        <a class="nav-link" href="../MainPage/about.html"> Về chúng tôi</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -103,90 +43,121 @@
                 <div class="d-flex gap-2">
                     <a class="nav-link" href="../MainPage/register.html">Đăng kí</a>
                     <a class="nav-link">|</a>
-                    <a class="nav-link"> Đăng nhập</a>
+                    <button type="button" class="btn btn-primary dnhap" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Đăng nhập
                 </div>
 
+
             </div>
         </div>
-    </nav> 
-</div>
-    <section>
-        <h1>ABOUT US</h1>
-    </section>
-   <div class="row" style="padding: 20px; text-align: justify;">
-    <div class="col-12 mt-4">
-        <h3 style="color: #b48409;"> LỊCH SỬ HÌNH THÀNH</h3>
-        <h5> Jutram được sáng lập bởi hai bạn sinh viên đầy nhiệt huyết, đam mê công nghệ và mong 
-            muốn mang đến những chiếc laptop chất lượng với mức giá hợp lý cho cộng đồng. 
-            Hành trình của họ bắt đầu từ những năm tháng đại học, nơi cả hai đều chia sẻ cùng 
-            một tầm nhìn và sự đam mê đối với công nghệ, đặc biệt là các thiết bị laptop.</h5>
-    </div>
-   </div>
+        <!-- form Dang nhap -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng nhập</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="mb-3 p-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 mx-3 bt-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="modal-footer p-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                        </div>
 
-    <div class="row" style="padding: 20px; text-align: justify;">
-        <h3 style="color:#b48409 "> NHÀ SÁNG LẬP</h3>
-        <div class="founder col-md-4">
-            <img src="/SRC/Assets/juju.png"
-             alt="Founder 1">
-            <h3>Huỳnh Thị Anh Thư</h3>
-            <p>Người sáng lập</p>
-        </div>
-        <div class="founder col-md-4">
-            <img src="/SRC/Assets/tram.png" alt="Founder 2">
-            <h3>Lê Ngô Quỳnh Trâm</h3>
-            <p>Người sáng lập</p>
-        </div>
-
-        <div class="col-md-4">
-            <h5>Jutram được sáng lập bởi hai người đam mê công nghệ và mong muốn cung cấp những 
-                sản phẩm laptop chất lượng cao với mức giá hợp lý. Với mục tiêu mang lại sự hài lòng 
-                cho khách hàng. Ý nghĩa của tên Jutram là sự kết hợp của tên hai nhà sáng lập .</h5>
+                    </form>
+                </div>
             </div>
         </div>
-<div class="row" style="padding: 20px; text-align: justify;">
-    <h3 style="color:#b48409 "> CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
-    <img src="/SRC/Assets/CTKM.png" alt="">
-</div>
 
-<div class="row g-2 mt-4 text-center"
-style="padding: 20px; text-align: justify;">
-    <div class="col-12">
-    <h5>Cảm ơn bạn đã đến với Jutram – nơi cung cấp những chiếc laptop chất lượng, 
-        đáp ứng mọi nhu cầu học tập, làm việc và giải trí của bạn. Chúng tôi 
-        tự hào là một trong những địa chỉ tin cậy trong ngành bán lẻ laptop, cam kết 
-        mang đến cho khách hàng những sản phẩm và dịch vụ khách hàng tốt nhất.</h5>  
-    </div>
-</div>
-<footer>
-    <div  class="row"
-    style="background-color: #111d89; color: #fff; padding: 20px; text-align: justify;">
-        <div class="col-md-6">
-            <h3 style="color:#ffc940">Liên Hệ</h3>
-            <p>Email: <a href="mailto:contact@jutram.com" style="color: #fff; text-decoration: none;">
-                contact@jutram.com </a> </p>
-            <p> Điện thoại: (+84) 90 8082 669 </p>
-            <p>Địa chỉ: 23 Đường Tân Thành, Phường Hoà Thạnh, Quận Tân Phú, TP. Hồ Chí Minh, Việt Nam</p>
-            <h3 style="color: #ffc940;">Kết Nối Với Chúng Tôi</h3>
-            <a href="https://facebook.com" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none;">Facebook</a> |
-            <a href="https://twitter.com" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a> |
-            <a href="https://linkedin.com" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none;">LinkedIn</a> |
-            <a href="https://instagram.com" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
-            <p><a href="/privacy-policy" style="color: #fff; text-decoration: none;">Chính sách bảo mật</a> | 
-                
-                <a href="/terms-of-service" style="color: #fff; text-decoration: none;">Điều khoản dịch vụ</a></p>
-           
+    </nav>
+
+    <div class="scroll-field">
+        <div class="w-100 text-center p-4 fs-2 fw-semibold title-page">VỀ CHÚNG TÔI</div>
+        <div class="row" style="padding: 20px; text-align: justify;">
+            <div class="col-12 mt-4">
+                <h3 style="color: #b48409;"> LỊCH SỬ HÌNH THÀNH</h3>
+                <h5> Jutram được sáng lập bởi hai bạn sinh viên đầy nhiệt huyết, đam mê công nghệ và mong
+                    muốn mang đến những chiếc laptop chất lượng với mức giá hợp lý cho cộng đồng.
+                    Hành trình của họ bắt đầu từ những năm tháng đại học, nơi cả hai đều chia sẻ cùng
+                    một tầm nhìn và sự đam mê đối với công nghệ, đặc biệt là các thiết bị laptop.</h5>
+            </div>
         </div>
-        <div class="col-md-6">
-            <!-- Google Map Embed -->
-            <h3 style="color: #ffc940;">Vị trí của chúng tôi</h3>
-            <img src="/SRC/Assets/diachi.png"
-            width="550x"
-            height= "300px">
-         </div>
-         <p style="color: #ffc940; text-align: center;" > &copy; 2024 Công ty Jutram. Mọi quyền được bảo lưu.</p>
-    </div>
- 
-</footer>
 
-    </body>
-    </html>
+        <div class="row" style="padding: 20px; text-align: justify;">
+            <h3 style="color:#b48409 "> NHÀ SÁNG LẬP</h3>
+            <div class="founder col-md-4">
+                <img src="/SRC/Assets/juju.png" alt="Founder 1">
+                <h3>Huỳnh Thị Anh Thư</h3>
+                <p>Người sáng lập</p>
+            </div>
+            <div class="founder col-md-4">
+                <img src="/SRC/Assets/tram.png" alt="Founder 2">
+                <h3>Lê Ngô Quỳnh Trâm</h3>
+                <p>Người sáng lập</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Jutram được sáng lập bởi hai người đam mê công nghệ và mong muốn cung cấp những
+                    sản phẩm laptop chất lượng cao với mức giá hợp lý. Với mục tiêu mang lại sự hài lòng
+                    cho khách hàng. Ý nghĩa của tên Jutram là sự kết hợp của tên hai nhà sáng lập .</h5>
+            </div>
+        </div>
+        <div class="row" style="padding: 20px; text-align: justify;">
+            <h3 style="color:#b48409 "> CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+            <img src="/SRC/Assets/CTKM.png" alt="">
+        </div>
+
+        <div class="row g-2 mt-4 text-center" style="padding: 20px; text-align: justify;">
+            <div class="col-12">
+                <h5>Cảm ơn bạn đã đến với Jutram – nơi cung cấp những chiếc laptop chất lượng,
+                    đáp ứng mọi nhu cầu học tập, làm việc và giải trí của bạn. Chúng tôi
+                    tự hào là một trong những địa chỉ tin cậy trong ngành bán lẻ laptop, cam kết
+                    mang đến cho khách hàng những sản phẩm và dịch vụ khách hàng tốt nhất.</h5>
+            </div>
+        </div>
+        <footer>
+            <div class="row" style="background-color: #111d89; color: #fff; padding: 20px; text-align: justify;">
+                <div class="col-md-6">
+                    <h3 style="color:#ffc940">Liên Hệ</h3>
+                    <p>Email: <a href="mailto:contact@jutram.com" style="color: #fff; text-decoration: none;">
+                            contact@jutram.com </a> </p>
+                    <p> Điện thoại: (+84) 90 8082 669 </p>
+                    <p>Địa chỉ: 23 Đường Tân Thành, Phường Hoà Thạnh, Quận Tân Phú, TP. Hồ Chí Minh, Việt Nam</p>
+                    <h3 style="color: #ffc940;">Kết Nối Với Chúng Tôi</h3>
+                    <a href="https://facebook.com" target="_blank"
+                        style="color: #fff; margin: 0 10px; text-decoration: none;">Facebook</a> |
+                    <a href="https://twitter.com" target="_blank"
+                        style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a> |
+                    <a href="https://linkedin.com" target="_blank"
+                        style="color: #fff; margin: 0 10px; text-decoration: none;">LinkedIn</a> |
+                    <a href="https://instagram.com" target="_blank"
+                        style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
+                    <p><a href="/privacy-policy" style="color: #fff; text-decoration: none;">Chính sách bảo mật</a> |
+
+                        <a href="/terms-of-service" style="color: #fff; text-decoration: none;">Điều khoản dịch vụ</a>
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <!-- Google Map Embed -->
+                    <h3 style="color: #ffc940;">Vị trí của chúng tôi</h3>
+                    <img src="/SRC/Assets/diachi.png" width="550x" height="300px">
+                </div>
+                <p style="color: #ffc940; text-align: center;"> &copy; 2024 Công ty Jutram. Mọi quyền được bảo lưu.</p>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
