@@ -62,3 +62,13 @@
     overflow-y: auto;
     height: calc(100vh - 70px);
 }
+aside{
+    margin-top: 570px;
+    padding: 9px;
+    position: fixed;
+
+}
+ aside img{
+    width: 50px;
+    height: 50px;
+}

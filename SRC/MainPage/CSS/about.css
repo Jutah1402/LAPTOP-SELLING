@@ -67,5 +67,76 @@
     background-color: #111d89;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px ;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #007bff; /* Màu xanh chủ đạo */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+.about-content {
+    max-width: 800px;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+.about-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.founder {
+
+    text-align: center;
+}
+.founder img {
+    width: 200px; /* Giữ tỉ lệ tròn */
+    height: 200px; /* Giữ tỉ lệ tròn */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 50%; /* Tạo hình tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.founder h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #111d89;
+}
+.founder p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+footer{
+    clear: both;
+}
+aside{
+    margin-top: 570px;
+    padding: 9px;
+    position: fixed;
+
+}
+ aside img{
+    width: 50px;
+    height: 50px;
 }
