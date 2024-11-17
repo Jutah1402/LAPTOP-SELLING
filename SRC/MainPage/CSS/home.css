@@ -123,6 +123,10 @@
     border: none ;
     margin-top: 20px;
 }
+aside{
+    margin-top: 570px;
+    padding: 9px;
+    position: fixed;
 
 #exampleModal .modal-footer .btn.btn-primary{
     background-color: #202c92;
