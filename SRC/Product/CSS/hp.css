@@ -144,13 +144,3 @@ font-size: 16px;
 h3{
 color: #111d89;
 }
-aside{
-    margin-top: 570px;
-    padding: 9px;
-    position: fixed;
-
-}
- aside img{
-    width: 50px;
-    height: 50px;
-}
