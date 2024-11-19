@@ -126,9 +126,29 @@
 aside{
     margin-top: 570px;
     padding: 9px;
-    position: fixed;
+    position: fixed;}
 
 #exampleModal .modal-footer .btn.btn-primary{
     background-color: #202c92;
     border-color: #202c92;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #ff5e5e;
+}
+
+.feature-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feature-description {
+    color: gray;
 }

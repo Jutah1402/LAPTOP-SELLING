@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" style="background-color: #111D8A;">
-            <img src="../Assets/Blue Waves Surfing Club Logo (1024 x 500 px).png" alt="">
+            <a href="./sitemap.html"><img src="../Assets/Blue Waves Surfing Club Logo (1024 x 500 px).png" alt=""></a>
             <a class="navbar-brand" href=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,8 +38,15 @@
                         <a class="nav-link" href="/SRC/MainPage/about.html"> Về chúng tôi</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-4" type="search" placeholder="Tìm kiếm" aria-label="">
+                <form class="d-flex position-relative" role="search">
+                    <input class="form-control me-4" type="search" placeholder="Tìm kiếm...">
+                    <button class="btn position-absolute" type="button" id="button-addon2" style="right: 25px">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="height: 15px; width: 15px;"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
                 </form>
 
                 <div class="d-flex gap-2">
@@ -63,17 +70,16 @@
                     </div>
                     <form>
                         <div class="mb-3 p-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">Tên đăng nhập</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3 mx-3 bt-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputMật khẩu1" class="form-label">Mật khẩu</label>
+                            <input type="Mật khẩu" class="form-control" id="exampleInputMật khẩu1">
                         </div>
                         <div class="modal-footer p-2">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary">Lưu</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đăng nhập</button>
                         </div>
 
                     </form>
@@ -91,23 +97,22 @@
         <section class="blog-posts container">
             <article class="post">
                 <img src="../Assets/Top-7-laptop-AI-ASUS-2-1344x840.jpg" alt="Hình ảnh laptop 1">
-                <h3>Top 8 laptop AI ASUS đáng mua nhất năm 2024</h3>
+                <a href="../News/news1.html">Top 8 laptop AI ASUS đáng mua nhất năm 2024</a>
                 <p>Hãng MacBook vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá</p>
             </article>
             <article class="post">
                 <img src="../Assets/macbook-doi-moi-nhat-cover-.jpg" alt="Hình ảnh laptop 3">
-                <h3>So sánh hai mẫu laptop gaming đình đám</h3>
+                <a href="../News/news1.html">So sánh hai mẫu laptop gaming đình đám</a>
                 <p>Bài so sánh chi tiết giữa hai mẫu laptop gaming hot nhất hiện nay, giúp bạn đưa ra...</p>
             </article>
             <article class="post">
                 <img src="../Assets/avatar-cach-khac-phuc-tinh-trang-ipad-khong-kha-dung.jpg" alt="Hình ảnh laptop 1">
-                <h3>Cách khắc phục tình trạng iPad không khả dụng
-                </h3>
+                <a href="../News/news1.html">Cách khắc phục tình trạng iPad không khả dụng</a>
                 <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
             </article>
             <article class="post">
                 <img src="../Assets/Loi-ich-cua-laptop-AI-trong-thiet-ke-do-hoa-1-1344x840.jpg" alt="Hình ảnh laptop 1">
-                <h3>Lợi ích của laptop AI trong thiết kế đồ họa bạn cần biết</h3>
+                <a href="../News/news1.html">Lợi ích của laptop AI trong thiết kế đồ họa bạn cần biết</a>
                 <p>Hãng X vừa ra mắt mẫu laptop với cấu hình mạnh mẽ và thiết kế đột phá...</p>
             </article>
         </section>
@@ -118,7 +123,7 @@
         </aside>
 
 
-        <div class="container my-4">
+        <div class="container my-4 mt-5">
             <div class="row">
                 <!-- Bài viết 1 -->
                 <div class="col-md-6 d-flex mb-4">
@@ -144,37 +149,43 @@
         </div>
 
 
-        <footer>
-            <div class="row" style="background-color: #111d89; color: #fff; padding: 20px; text-align: justify;">
-                <div class="col-md-6">
-                    <h3 style="color:#ffc940">Liên Hệ</h3>
-                    <p>Email: <a href="mailto:contact@jutram.com" style="color: #fff; text-decoration: none;">
-                            contact@jutram.com </a> </p>
-                    <p> Điện thoại: (+84) 90 8082 669 </p>
-                    <p>Địa chỉ: 23 Đường Tân Thành, Phường Hoà Thạnh, Quận Tân Phú, TP. Hồ Chí Minh, Việt Nam</p>
-                    <h3 style="color: #ffc940;">Kết Nối Với Chúng Tôi</h3>
-                    <a href="https://facebook.com" target="_blank"
-                        style="color: #fff; margin: 0 10px; text-decoration: none;">Facebook</a> |
-                    <a href="https://twitter.com" target="_blank"
-                        style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a> |
-                    <a href="https://linkedin.com" target="_blank"
-                        style="color: #fff; margin: 0 10px; text-decoration: none;">LinkedIn</a> |
-                    <a href="https://instagram.com" target="_blank"
-                        style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
-                    <p><a href="/privacy-policy" style="color: #fff; text-decoration: none;">Chính sách bảo mật</a> |
+        <footer style="background-color: #111d89; margin-top: 50px;">
+            <div class="container">
+                <div class="row"
+                    style="background-color: #111d89; color: #fff; padding: 20px; text-align: justify; margin: 0;">
+                    <div class="col-md-7">
+                        <h3 style="color:#ffc940">Liên Hệ</h3>
+                        <p>Email: <a href="mailto:contact@jutram.com" style="color: #fff; text-decoration: none;">
+                                contact@jutram.com </a> </p>
+                        <p> Điện thoại: (+84) 90 8082 669 </p>
+                        <p>Địa chỉ: 23 Đường Tân Thành, Phường Hoà Thạnh, Quận Tân Phú, TP. Hồ Chí Minh, Việt Nam</p>
+                        <h3 style="color: #ffc940; margin-top: 10px;">Kết Nối Với Chúng Tôi</h3>
+                        <a href="https://facebook.com" target="_blank"
+                            style="color: #fff; margin-right: 10px; text-decoration: none;">Facebook</a> |
+                        <a href="https://twitter.com" target="_blank"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a> |
+                        <a href="https://linkedin.com" target="_blank"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">LinkedIn</a> |
+                        <a href="https://instagram.com" target="_blank"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
+                        <p><a href="/privacy-policy" style="color: #fff; text-decoration: none;">Chính sách bảo mật</a>
+                            |
 
-                        <a href="/terms-of-service" style="color: #fff; text-decoration: none;">Điều khoản dịch vụ</a>
+                            <a href="/terms-of-service" style="color: #fff; text-decoration: none;">Điều khoản dịch
+                                vụ</a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-5">
+                        <h3 style="color: #ffc940;">Vị trí của chúng tôi</h3>
+                        <img src="/SRC/Assets/diachi.png" style="width: auto;  margin-top: 4px;" width="550px" ;
+                            height="300px" ;>
+                    </div>
+                    <p style="color: #ffc940; text-align: center; margin-top: 20px; margin-bottom: 0;"> &copy; 2024 Công
+                        ty Jutram. Mọi quyền được bảo lưu.
                     </p>
-
                 </div>
-                <div class="col-md-6">
-                    <!-- Google Map Embed -->
-                    <h3 style="color: #ffc940;">Vị trí của chúng tôi</h3>
-                    <img src="/SRC/Assets/diachi.png" width="550px" height="300px">
-                </div>
-                <p style="color: #ffc940; text-align: center;"> &copy; 2024 Công ty Jutram. Mọi quyền được bảo lưu.</p>
             </div>
-
         </footer>
     </div>
 </body>
