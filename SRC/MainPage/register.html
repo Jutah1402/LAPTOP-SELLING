@@ -54,9 +54,6 @@
                     <button type="button" class="btn btn-primary dnhap" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Đăng nhập
                 </div>
-
-
-
             </div>
         </div>
         <!-- form Dang nhap -->
@@ -80,7 +77,6 @@
                         <div class="modal-footer p-2">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đăng nhập</button>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -91,10 +87,10 @@
     <div class="scroll-field">
         <div class="container mt-3">
             <div class="row g-0">
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-5">
                     <div class="card shadow-lg">
-                        <div class="card-body p-5">
+                        <div class="card-body p-4">
                             <h3 class="text-center mb-4">Đăng kí tài khoản</h3>
                             <form>
                                 <div class="mb-3">
@@ -107,6 +103,16 @@
                                     <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn"
                                         required>
                                 </div>
+                                <!-- Ngày sinh -->
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label">Ngày sinh</label>
+                                    <input type="date" class="form-control" id="dob" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Tên tài khoản</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn"
+                                        required>
+                                </div>
                                 <div class="mb-3">
                                     <label for="Mật khẩu" class="form-label">Mật khẩu</label>
                                     <input type="Mật khẩu" class="form-control" id="Mật khẩu"
@@ -117,23 +123,45 @@
                                     <input type="Mật khẩu" class="form-control" id="confirm_Mật khẩu"
                                         placeholder="Nhập lại mật khẩu" required>
                                 </div>
+
+                                <div class="mb-3">
+                                    <label for="gender" class="form-label">Giới tính</label>
+                                    <select class="form-select" id="gender" required>
+                                        <option value="">Chọn giới tính</option>
+                                        <option value="male">Nam</option>
+                                        <option value="female">Nữ</option>
+                                        <option value="other">Khác</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Số điện thoại</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="Nhập số điện thoại của bạn" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="address"
+                                        placeholder="Nhập địa chỉ của bạn" required>
+                                </div>
+
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-block mt-2">Đăng ký</button>
+                                    <button type="submit" class="btn btn-primary btn-block mt-2" style="background-color: #111D8A ;">Đăng ký</button>
                                 </div>
                             </form>
-                            <p class="text-center mt-2">Đã có tài khoản? <a href="#">Đăng nhập ngay</a></p>
+                            <p class="text-center mt-2">Đã có tài khoản? <a class="dnhap" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Đăng nhập ngay</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3">
-                    <img src="../Assets/1111111.jpg" alt="" style="height: 590px;">
+                <div class="col-md-4">
+                    <img src="../Assets/dọc.jpg" alt="" style="width: 552px;">
                 </div>
                 <div class="col-md-2"></div>
+
             </div>
-
         </div>
-
     </div>
 
 </body>
