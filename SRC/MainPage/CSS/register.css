@@ -1,38 +1,19 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
+.error {
+    color: red;
+    font-size: 0.9rem;
+    display: none; /* Ẩn lỗi mặc định */
 }
 
-.navbar {
-    padding: 0px;
-    margin: 0px;
-    height: 70px;
-}
-
-.navbar img {
-    height: 70px;
-}
-
-.navbar a {
-    color: #fff;
-}
-
-.navbar a:hover{
-    color: #ffc940;
-}
-
-
-.navbar ul {
-    display: flex;
-    gap: 15px;
-}
-.navbar a:hover{
-    color: #ffc940;
-}
-
-.scroll-field {
-    overflow-y: auto;
-    height: calc(100vh - 70px);
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: none; /* Ẩn thông báo mặc định */
+    z-index: 9999;
 }

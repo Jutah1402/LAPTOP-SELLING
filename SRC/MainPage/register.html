@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../MainPage/CSS/register.css">
     <link rel="stylesheet" href="./CSS/home.css">
 </head>
-<script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -52,11 +51,10 @@
                     <a class="nav-link" href="/SRC/MainPage/register.html">Đăng kí</a>
                     <a class="nav-link">|</a>
                     <button type="button" class="btn btn-primary dnhap" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Đăng nhập
+                        data-bs-target="#exampleModal">Đăng nhập</button>
                 </div>
             </div>
         </div>
-        <!-- form Dang nhap -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -64,24 +62,24 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng nhập</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form>
+                    <form id="loginForm" novalidate>
                         <div class="mb-3 p-3">
-                            <label for="exampleInputEmail1" class="form-label">Tên đăng nhập</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <label for="loginUsername" class="form-label">Tên đăng nhập</label>
+                            <input type="email" class="form-control" id="loginUsername" aria-describedby="emailHelp" placeholder="Nhập tên đăng nhập">
+                            <div class="invalid-feedback">Vui lòng nhập tên đăng nhập hợp lệ.</div>
                         </div>
                         <div class="mb-3 mx-3 bt-3">
-                            <label for="exampleInputMật khẩu1" class="form-label">Mật khẩu</label>
-                            <input type="Mật khẩu" class="form-control" id="exampleInputMật khẩu1">
+                            <label for="loginPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu">
+                            <div class="invalid-feedback">Vui lòng nhập mật khẩu (ít nhất 6 ký tự).</div>
                         </div>
                         <div class="modal-footer p-2">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đăng nhập</button>
+                            <button type="submit" class="btn btn-primary">Đăng nhập</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
     </nav>
 
     <div class="scroll-field">
@@ -92,62 +90,59 @@
                     <div class="card shadow-lg">
                         <div class="card-body p-4">
                             <h3 class="text-center mb-4">Đăng kí tài khoản</h3>
-                            <form>
+                            <form id="registrationForm" novalidate>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Tên của bạn</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn"
-                                        required>
+                                    <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn">
+                                    <div class="invalid-feedback">Vui lòng nhập tên của bạn.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn"
-                                        required>
+                                    <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+                                    <div class="invalid-feedback">Vui lòng nhập email hợp lệ.</div>
                                 </div>
-                                <!-- Ngày sinh -->
                                 <div class="mb-3">
                                     <label for="dob" class="form-label">Ngày sinh</label>
-                                    <input type="date" class="form-control" id="dob" required>
+                                    <input type="date" class="form-control" id="dob">
+                                    <div class="invalid-feedback">Vui lòng chọn ngày sinh.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Tên tài khoản</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn"
-                                        required>
+                                    <label for="username" class="form-label">Tên tài khoản</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Nhập tên tài khoản">
+                                    <div class="invalid-feedback">Vui lòng nhập tên tài khoản.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="Mật khẩu" class="form-label">Mật khẩu</label>
-                                    <input type="Mật khẩu" class="form-control" id="Mật khẩu"
-                                        placeholder="Nhập mật khẩu" required>
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                                    <div class="invalid-feedback">Mật khẩu cần ít nhất 6 ký tự.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirm_Mật khẩu" class="form-label">Nhập lại mật khẩu</label>
-                                    <input type="Mật khẩu" class="form-control" id="confirm_Mật khẩu"
-                                        placeholder="Nhập lại mật khẩu" required>
+                                    <label for="confirmPassword" class="form-label">Nhập lại mật khẩu</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu">
+                                    <div class="invalid-feedback">Mật khẩu nhập lại không khớp.</div>
                                 </div>
-
                                 <div class="mb-3">
                                     <label for="gender" class="form-label">Giới tính</label>
-                                    <select class="form-select" id="gender" required>
+                                    <select class="form-select" id="gender">
                                         <option value="">Chọn giới tính</option>
                                         <option value="male">Nam</option>
                                         <option value="female">Nữ</option>
                                         <option value="other">Khác</option>
                                     </select>
+                                    <div class="invalid-feedback">Vui lòng chọn giới tính.</div>
                                 </div>
-
                                 <div class="mb-3">
                                     <label for="phone" class="form-label">Số điện thoại</label>
-                                    <input type="tel" class="form-control" id="phone"
-                                        placeholder="Nhập số điện thoại của bạn" required>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại của bạn">
+                                    <div class="invalid-feedback">Vui lòng nhập số điện thoại hợp lệ.</div>
                                 </div>
-
                                 <div class="mb-3">
                                     <label for="address" class="form-label">Địa chỉ</label>
-                                    <input type="text" class="form-control" id="address"
-                                        placeholder="Nhập địa chỉ của bạn" required>
+                                    <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ của bạn">
+                                    <div class="invalid-feedback">Vui lòng nhập địa chỉ.</div>
                                 </div>
-
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-block mt-2" style="background-color: #111D8A ;">Đăng ký</button>
+                                    <button type="submit" class="btn btn-primary btn-block mt-2" style="background-color: #111D8A;">Đăng ký</button>
                                 </div>
                             </form>
                             <p class="text-center mt-2">Đã có tài khoản? <a class="dnhap" data-bs-toggle="modal"
@@ -156,14 +151,101 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../Assets/dọc.jpg" alt="" style="width: 552px;">
+                    <img src="../Assets/dọc.jpg" alt="" style="width: 545px;">
                 </div>
                 <div class="col-md-2"></div>
-
             </div>
         </div>
     </div>
-
 </body>
+
+<script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+<script>
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    let isValid = true;
+
+    const loginFields = [
+        {
+            id: "loginUsername",
+            message: "Vui lòng nhập tên đăng nhập hợp lệ.",
+            validator: value => /^\S+@\S+\.\S+$/.test(value) 
+        },
+        {
+            id: "loginPassword",
+            message: "Vui lòng nhập mật khẩu (ít nhất 6 ký tự).",
+            validator: value => value.length >= 6 
+        }
+    ];
+
+    // Clear previous error states
+    loginFields.forEach(({ id, message, validator }) => {
+        const input = document.getElementById(id);
+        const value = input.value.trim();
+        const isValidField = validator(value);
+
+        if (!isValidField) {
+            input.classList.add("is-invalid");
+            input.nextElementSibling.textContent = message;
+            isValid = false;
+        } else {
+            input.classList.remove("is-invalid");
+            input.nextElementSibling.textContent = "";
+        }
+    });
+
+   
+    if (isValid) {
+        alert("Đăng nhập thành công!");
+        window.location.href = "/SRC/MainPage/home.html"; 
+    }
+});
+
+
+    document.getElementById("registrationForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let isValid = true;
+
+        const fields = [
+            { id: "name", message: "Vui lòng nhập tên của bạn." },
+            { id: "email", message: "Vui lòng nhập email hợp lệ.", validator: value => /^\S+@\S+\.\S+$/.test(value) },
+            { id: "dob", message: "Vui lòng chọn ngày sinh." },
+            { id: "username", message: "Vui lòng nhập tên tài khoản." },
+            { id: "password", message: "Mật khẩu cần ít nhất 6 ký tự.", validator: value => value.length >= 6 },
+            {
+                id: "confirmPassword",
+                message: "Mật khẩu nhập lại không khớp.",
+                validator: value => value === document.getElementById("password").value
+            },
+            { id: "gender", message: "Vui lòng chọn giới tính.", validator: value => value !== "" },
+            { id: "phone", message: "Vui lòng nhập số điện thoại hợp lệ.", validator: value => /^[0-9]{10}$/.test(value) },
+            { id: "address", message: "Vui lòng nhập địa chỉ." }
+        ];
+
+        fields.forEach(({ id, message, validator }) => {
+            const input = document.getElementById(id);
+            const value = input.value.trim();
+            const isValidField = validator ? validator(value) : value !== "";
+
+            if (!isValidField) {
+                input.classList.add("is-invalid");
+                input.nextElementSibling.textContent = message;
+                isValid = false;
+            } else {
+                input.classList.remove("is-invalid");
+                input.nextElementSibling.textContent = "";
+            }
+        });
+
+        if (isValid) {
+            alert("Đăng ký thành công!");
+            window.location.href = "/SRC/MainPage/home.html";
+        }
+    });
+</script>
 
 </html>
